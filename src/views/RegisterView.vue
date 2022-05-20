@@ -57,10 +57,3 @@ export default Vue.extend({
     },
 })
 </script>
-
-<style scoped>
-#register-content-wrapper {
-    margin: 1em auto;
-    width: 50%;
-}
-</style>

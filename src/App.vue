@@ -1,9 +1,11 @@
 <template>
   <v-app>
-    <app-bar v-if="showAppBar"/>
+    <app-bar v-if="showAppBar" />
 
     <v-main>
-      <router-view />
+      <v-container fluid>
+        <router-view />
+      </v-container>
     </v-main>
   </v-app>
 </template>

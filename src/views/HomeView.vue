@@ -28,13 +28,6 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-    #home-content-wrapper {
-        margin: 1em auto;
-        width: 50%;
-    }
-    #home-btn-wrapper {
-        text-align: center;
-    }
     #home-btn-wrapper > a {
         margin: 0.5em;
     }

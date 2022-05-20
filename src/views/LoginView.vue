@@ -69,10 +69,3 @@ export default Vue.extend({
     },
 })
 </script>
-
-<style scoped>
-#login-content-wrapper {
-    margin: 1em auto;
-    width: 50%;
-}
-</style>
