@@ -11,6 +11,11 @@ const routes: Array<RouteConfig> = [
     component: () => import('../views/HomeView.vue'),
   },
   {
+    path: '/program',
+    name: 'program',
+    component: () => import('../views/ProgramView.vue'),
+  },
+  {
     path: '/workout',
     name: 'workout',
     component: () => import('../views/WorkoutView.vue'),
