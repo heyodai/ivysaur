@@ -4,8 +4,8 @@
         </h1>
         <p>A workout app for the Ivysaur lifting program.</p>
         <span id="home-btn-wrapper">
-            <v-btn color="primary" rounded>Login</v-btn>
-            <v-btn color="primary" rounded>Register</v-btn>
+            <router-link to="/login"><v-btn color="primary" rounded>Login</v-btn></router-link>
+            <router-link to="/register"><v-btn color="primary" rounded>Register</v-btn></router-link>
         </span>
     </div>
 </template>
@@ -35,7 +35,7 @@ export default Vue.extend({
     #home-btn-wrapper {
         text-align: center;
     }
-    #home-btn-wrapper > button {
+    #home-btn-wrapper > a {
         margin: 0.5em;
     }
 </style>

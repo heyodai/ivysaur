@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <app-bar v-if="this.$route.name != 'home'"/>
+    <app-bar v-if="showAppBar"/>
 
     <v-main>
       <router-view />
@@ -11,7 +11,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import AppBar from './components/AppBar.vue'
-// import AppBar from './components/AppBar.vue';
 
 export default Vue.extend({
   components: { AppBar },
@@ -20,5 +19,13 @@ export default Vue.extend({
   data: () => ({
     //
   }),
+
+  computed: {
+    showAppBar() {
+      const no_show = ['home', 'register', 'login']
+      const page: any = this.$route.name
+      return !no_show.includes(page)
+    }
+  },
 });
 </script>
